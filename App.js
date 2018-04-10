@@ -16,7 +16,7 @@ const paras = (
 
 const goose = 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-goose.jpg';
 
-const gooseImg = <img src = {goose} alt = 'goose' /> /*gotta put regular js expression inside braces when it's embedded inside of jsx*/ 
+const gooseImg = <img src = {goose} alt = 'goose' height = '200' width = '200' /> /*gotta put regular js expression inside braces when it's embedded inside of jsx*/ 
 
 class App extends Component {
   render() {
