@@ -6,7 +6,8 @@ import './App.css';
 let dessertString = 'Nothing';
 
 function isJudgmental() {
-  dessertString = Math.random()<0.5?'blueberry and acai smoothie':'double fudge brownie';
+  dessertString = (Math.random()<0.5)?'blueberry and acai smoothie':'double fudge brownie';
+  console.log(dessertString)
 }
 
 let favMeals = (
@@ -23,6 +24,7 @@ let favMeals = (
 
 class App extends Component {
   render() {
+    console.log(dessertString)
     return (
       <div>{favMeals}</div>
     );
