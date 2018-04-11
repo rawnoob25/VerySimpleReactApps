@@ -14,8 +14,15 @@ const paras = (
 );
 
 function change(e){
-  e.target.setAttribute('src', dogURL);
-  e.target.setAttribute('alt','dog');
+  let imgSrc = e.target.getAttribute('src');
+  if(imgSrc == dogURL){
+    e.target.setAttribute('src', catURL);
+    e.target.setAttribute('alt','cat');
+  } else {
+    e.target.setAttribute('src', dogURL);
+    e.target.setAttribute('alt','dog');
+  }
+
   e.target.setAttribute('height','500')
 }
 
