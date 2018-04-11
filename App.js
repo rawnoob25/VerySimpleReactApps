@@ -12,7 +12,7 @@ function isJudgmental() {
 
 let favMeals = (
   <div>
-    <h1 onClick = {isJudgmental}>Favorite Meals (click for dessert)</h1>
+    <h1 onClick = {isJudgmental}>Favorite Meals (click for dessert): {dessertString}</h1>
     <ul>
       <li>Breakfast: oatmeal, milk and raisins</li>
       <li>Lunch: tuna sandwich</li>
