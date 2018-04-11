@@ -15,7 +15,7 @@ const paras = (
 
 function change(e){
   let imgSrc = e.target.getAttribute('src');
-  if(imgSrc == dogURL){
+  if(imgSrc === dogURL){
     e.target.setAttribute('src', catURL);
     e.target.setAttribute('alt','cat');
   } else {
