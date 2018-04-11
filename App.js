@@ -13,6 +13,15 @@ const paras = (
   </div>
 );
 
+function change(e){
+  e.target.setAttribute('src', dogURL);
+  e.target.setAttribute('alt','dog');
+  e.target.setAttribute('height','500')
+}
+
+const catURL = 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-kitty.jpg';
+const pic = <img src = {catURL} alt = 'cat' onClick = {change} height = '500'/>
+const dogURL = 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg';
 
 const goose = 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-goose.jpg';
 
@@ -21,10 +30,13 @@ const gooseImg2 = <img src = {goose} alt = 'goose orig' height = '500' />
 class App extends Component {
   render() {
     return (
+      <div>{pic}</div>
+      /*
       <div>
         <div>{gooseImg1}</div>
         <div>{gooseImg2}</div>
       </div>
+      */
     );
     /*
     return (
