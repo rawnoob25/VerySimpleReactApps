@@ -1,34 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+let palindromeStrings = ['able','was','i','ere','i','saw','elba']
 
-let dessertString = 'Nothing';
-
-function isJudgmental() {
-  dessertString = (Math.random()<0.5)?'blueberry and acai smoothie':'double fudge brownie';
-  console.log(dessertString)
-}
-
-let favMeals = (
-  <div>
-    <h1>Favorite Meals</h1>
-    <button onClick = {isJudgmental}>Click for dessert</button> 
-    <ul>
-      <li>Breakfast: oatmeal, milk and raisins</li>
-      <li>Lunch: tuna sandwich</li>
-      <li>Dinner: Salmon steak and broccoli</li>
-      <li>Pre-bed dessert: {dessertString} </li>
-    </ul>
-  </div>
-);
-
+let palindromeStringsList = palindromeStrings.map(e=><li>{e}</li>);
+let theList = <ul>{palindromeStringsList}</ul>
 class App extends Component {
   render() {
-    console.log(dessertString)
-    return (
-      <div>{favMeals}</div>
-    );
+    return theList
   }
 }
 
